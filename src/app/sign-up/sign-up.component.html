@@ -1,1 +1,5 @@
-<h1>emailRenseignéDansInput</h1><input type="email" name="email" ngModel email/>
+<h1>you entered email : {{email | uppercase}} </h1>
+
+<label>email:
+  <input [(ngModel)]="email" placeholder="email">
+</label>
