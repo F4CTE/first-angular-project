@@ -1,0 +1,8 @@
+<img [src]="photo">
+<h1>Nom: {{name}}</h1>
+<h1>Prénom: {{firstName}}</h1>
+<p *ngIf="show">age: {{age}}</p>
+<p>{{phrase}}</p>
+<input [(ngModel)]="phrase">
+<br>
+<button (click)="show = !show">{{show ? 'cacher' : 'afficher'}}</button>
